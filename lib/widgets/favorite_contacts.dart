@@ -7,12 +7,10 @@ class FavoriteContacts extends StatefulWidget {
 }
 
 class _FavoriteContacts extends State<FavoriteContacts> {
-  int selectedIndex = 0;
-  final List<String> categories = ['Message', 'Online', 'Group', 'Request'];
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      padding: const EdgeInsets.only(top: 10.0),
       child: Column(
         children: <Widget>[
           Padding(
@@ -36,7 +34,7 @@ class _FavoriteContacts extends State<FavoriteContacts> {
             ),
           ),
           Container(
-            height: 120.0,
+            height: 110.0,
             child: ListView.builder(
               padding: EdgeInsets.only(left: 10.0),
               scrollDirection: Axis.horizontal,
