@@ -30,7 +30,7 @@ class _RecentChats extends State<RecentChats> {
                 margin: EdgeInsets.only(top: 5.0, bottom: 5.0, right: 10.0),
                 padding: EdgeInsets.symmetric(horizontal: 15.0, vertical: 5.0),
                 decoration: BoxDecoration(
-                  color: chat.unread ? Color(0xFFFFEFEE) : Colors.white,
+                  color: chat.unread ? Theme.of(context).accentColor : Colors.white,
                   borderRadius: BorderRadius.only(
                     topRight: Radius.circular(20.0),
                     bottomRight: Radius.circular(20.0)
